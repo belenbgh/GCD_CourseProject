@@ -13,9 +13,11 @@ The "run_analisys.R" file generates a tidy data set (namely "mean_std_averages_b
 For the script to work, we assume the data has been downloaded and unzipped from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip into our current working directory.
 
 By studing the README.txt and other informative files provided with the data set, as well as looking into the test and train files with a text editor, we get some understanding of the data set and the relationship between the several files. Briefly, regarding the info that is going to be used, we have two sets of data (_test data_ and _train data_), each set in its respective folders containg the files
-| UCI HAR Dataset/test/subject_test.txt | UCI HAR Dataset/train/subject_train.txt
-| UCI HAR Dataset/test/X_test.txt | UCI HAR Dataset/train/X_train.txt
-| UCI HAR Dataset/test/y_test.txt | UCI HAR Dataset/train/y_train.txt
+
+| UCI HAR Dataset/test/subject_test.txt | UCI HAR Dataset/train/subject_train.txt |
+| UCI HAR Dataset/test/X_test.txt | UCI HAR Dataset/train/X_train.txt |
+| UCI HAR Dataset/test/y_test.txt | UCI HAR Dataset/train/y_train.txt |
+
 and also have common files to either test/train set:
 - UCI HAR Dataset/activity_labels.txt
 - UCI HAR Dataset/features.txt
