@@ -23,8 +23,9 @@ and also have common files to either test/train set:
 ###### "run_analisys.R" script works through the following steps:
 
 1. First of all, the script reads the common information for both test and train data sets into a data frame using read.table customized with
-··- colClasses = "character" to prevent the values in the file from becoming factors, since we will like to use them later as vector string
-··- column names assignation to deal with them easily
+''* Unordered sub-list.
+''- colClasses = "character" to prevent the values in the file from becoming factors, since we will like to use them later as vector string
+''- column names assignation to deal with them easily
 
 2. Reads the test and train files into the corresponding data frames. In both cases, the script goes like this:
 ··1. reads subject_test/train.txt (each row is the subject identifier whose observations are in the corresponding row of X)
