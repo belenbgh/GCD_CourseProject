@@ -38,9 +38,6 @@
 	# subject_id, activity, feature_1, feature_2, ..., feature_561
 
 	names(test_data) <- c("subject_id", "activity_id", features$feature_desc)
-	# he tenido que leer el features as character porque si no, lo convertia todo
-	# en factor y features$feature_desc me devolvia los niveles o lo que sea en 
-	# lugar de los nombres!!!
 	
 
 ## Read train data: (same steps as for test data)
@@ -90,10 +87,8 @@
 ## 10299 obs. of 68 variables (66 features + subject_id + activity_id)
 
 
-## We use activityLabel to transform from number labels to more
-## descriptive labels. Once we have put together all the data refering the test
-## set, we can afford merging with the activityLabels data frame (it couldn't be
-## done before because the order relation betewn the three previos data sets)
+## We use activity_label to transform from number labels to more
+## descriptive labels.
 
 	raw_data_2$activity_id <- as.factor(raw_data_2$activity_id)
 
@@ -119,16 +114,10 @@
 	# Then, agregate it computing the mean for each variable for each 
 	# combination of subject_id and activity_desc
 	
-	tidy_data <- dcast(melted_data, subject_id + activity_desc ~ variable, mean)
+	tidy_data <- dcast(melted_data, 
+				 subject_id + activity_desc ~ variable, 
+				 mean)
 
-## So far, we've not had to adressed any column by dataframe$col_name, but in 
-## order to avoid problems with the column names in future analysis of this data 
-## set, let's make them R legal column names:
-
-	#(aunque esto ahora va a quedar mucho mas feo en el codebook, no?!)
-
-	names(tidy_data) <- make.names(names(tidy_data)) 
-	# pues si... :(
 
 ## Finally, write a text file with the tidy data set; set the option of not 
 ## writing the line numbers preventing them to appear in future readings of 

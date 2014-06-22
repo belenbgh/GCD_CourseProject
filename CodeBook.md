@@ -6,17 +6,17 @@
 ###
 ##################################################################
 
-##### Content description of "mean_std_averages_by_activity_and_subject.txt" file.
+##### Content description of "mean_std_averages_by_activity_and_subject.txt" file
 
-This text file is obtained running the R script "run_analysis.R", both - file and script - to mett the requirements of the Coursera course "Getting and Cleaning Data" course project.
+This text file is obtained running the R script "run_analysis.R", both - file and script - to meet the requirements of the Coursera course "Getting and Cleaning Data" course project.
 
-The original data and information about it can be found in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The original data set and information about it can be found in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The text file contains 181 rows and 68 space separated columns; briefly:
-- First row is the header of the file, containg the column names
-- Each row after this, corresponds to values of an observation for a particular subject and a particular activity
+- First row is the header of the file, containing the column names
+- Each row after this, corresponds to values of observations for a particular subject and a particular activity
 - First two columns identify the  subject and the activity
-- Subsequent columns correspond to average values of the measurement whose names stand for
+- Subsequent columns correspond to average values of the measurement which column names stand for
 
 ###### Column description:
 
