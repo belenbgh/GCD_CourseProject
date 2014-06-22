@@ -23,16 +23,15 @@ and also have common files to either test/train set:
 ###### "run_analisys.R" script works through the following steps:
 
 1. First of all, the script reads the common information for both test and train data sets into a data frame using read.table customized with
-''* Unordered sub-list.
-''- colClasses = "character" to prevent the values in the file from becoming factors, since we will like to use them later as vector string
-''- column names assignation to deal with them easily
+ - colClasses = "character" to prevent the values in the file from becoming factors, since we will like to use them later as vector string
+ - column names assignation to deal with them easily
 
 2. Reads the test and train files into the corresponding data frames. In both cases, the script goes like this:
-··1. reads subject_test/train.txt (each row is the subject identifier whose observations are in the corresponding row of X)
-··2. y_test/train.txt (each row shows the activity the subject was performing in the observations in the corresponding row of X)
-··3. X_test/train (each row shows the features (measurements) for a particular subject and a particular activity)
-··4. creates a new data_frame test/train_data using subject_test/train to add a column to X_test/train to tell about the subject and using y_test/train to add a column to X_test/train to tell about the activity the subject performed
-··5. finally, it sets descriptive names to the columns in test/train_data, using the features data_frame
+ 1. reads subject_test/train.txt (each row is the subject identifier whose observations are in the corresponding row of X)
+ 2. y_test/train.txt (each row shows the activity the subject was performing in the observations in the corresponding row of X)
+ 3. X_test/train (each row shows the features (measurements) for a particular subject and a particular activity)
+ 4. creates a new data_frame test/train_data using subject_test/train to add a column to X_test/train to tell about the subject and using y_test/train to add a column to X_test/train to tell about the activity the subject performed
+ 5. finally, it sets descriptive names to the columns in test/train_data, using the features data_frame
 
 3. At this point, test/train_data has the same structure and their rows correspond to the same observations for different subjects, so we can put them all together row binding.
 
