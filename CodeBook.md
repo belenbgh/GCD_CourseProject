@@ -1,32 +1,27 @@
 ##################################################################
-#
-# Geting and Cleaning Data
-#
-# Course Project CodeBook.md
-#
+###
+### Geting and Cleaning Data
+###
+### Course Project CodeBook.md
+###
 ##################################################################
 
-Content description of "mean_std_averages_by_activity_and_subject.txt".
+##### Content description of "mean_std_averages_by_activity_and_subject.txt" file.
 
-This text file is obtained running the R script "run_analysis.R", both 
-- file and script - to mett the requirements of the Coursera course 
-"Getting and Cleaning Data" course project.
+This text file is obtained running the R script "run_analysis.R", both - file and script - to mett the requirements of the Coursera course "Getting and Cleaning Data" course project.
 
-The original data and information about it can be found in [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones]
+The original data and information about it can be found in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The text file contains 181 rows and 68 space separated columns; brievely:
+The text file contains 181 rows and 68 space separated columns; briefly:
 - First row is the header of the file, containg the column names
-- Each row after this, corresponds to values of an observation for a particular 
-subject (id from 1 to 30) and a particular activity (WALKING, WALKING_UPSTAIRS, 
-WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING)
+- Each row after this, corresponds to values of an observation for a particular subject and a particular activity
 - First two columns identify the  subject and the activity
-- Subsequent columns correspond to average values of the measurement whose names
-stand for
+- Subsequent columns correspond to average values of the measurement whose names stand for
 
-Column description:
+###### Column description:
 
 1. subject_id : (int) Identifier of the subject. Values from 1 to 30.
-2. activity_desc : (character) Description of the activity peformanced by the subject.
+2. activity_desc : (character) Description of the activity peformanced by the subject. Values WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING.
 3. tBodyAcc-mean()-X : (num) Average of all the measurements of the feature 'tBodyAcc-mean()-X' for particular subject and activity.
 4. tBodyAcc-mean()-Y : (num) Average of all the measurements of the feature 'tBodyAcc-mean()-Y' for particular subject and activity.
 5. tBodyAcc-mean()-Z : (num) Average of all the measurements of the feature 'tBodyAcc-mean()-Z' for particular subject and activity.
